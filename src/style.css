@@ -1,6 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+  
+
 body{
     background-color: #000;
+    font-family: 'Sacramento', cursive;
+
     color: #fff;
     padding: 0%;
     margin: 0%;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    padding: 3% 5%;
+    gap: 2vw;
+    justify-content: center;
+}
+.btn{
+    border: 1px solid #fff;
+    border-top: 0;
+    border-bottom: 0;
+    font-family: 'Sacramento', cursive;
+    font-size: clamp(10px, 2vw,3vw);
+    background-color: #000;
+    color: white;
+    transition: 1s;
+    border-radius: 6px;
+    
+}
+.btn:hover{
+    border: 1px solid #000;
+    border-top: 0;
+    
+    border-bottom: 0;
+    background-color: #fff;
+    color: #000;
+}
+.page.main{
+    font-size: 4vw;
+    padding: 2% 15%;
+    text-align: center;
+}
+.page.menu{
+    display: flex;
+    justify-content: center;
+    padding: 0 10vw;
+    flex-wrap: wrap;
+}
+.preview{
+    display: inline-block;
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    margin: 5vh 5vw;
+    border-radius: 50%;
+}
+.image{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 50%;
+    
+}
+.image:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+    }
+.overlay{
+    background-color: rgba(82, 87, 87, 0.7);
+    border-radius: 50%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    left: 0vw;
+    position: absolute;
+    transition: opacity .5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: opacity .5s;
+  }
+
+.page.contactUs{
+    display: grid;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.contactUs.location{
+    width: 30vw;
+    text-align: center;
+    font-size: clamp(16px,32px,48px);
+}
+form{
+    display: grid;
+    grid-template-columns: 20vw;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 10%;
+}
+textarea{
+    height: 20vh;
+}
+.submit{
+    width: 8vw;
+    border: .5px solid #fff;
+    font-size: clamp(5px,1vw,2vw);
+    font-family: 'Sacramento', cursive;
+    margin: 0 28%;
+    background-color: #000;
+    color: white;
+    transition: 1s;
+    border-radius: 6px;
+}
+.submit:hover{
+    border: .5px solid #000;
+    background-color: #fff;
+    color: #000;
 }

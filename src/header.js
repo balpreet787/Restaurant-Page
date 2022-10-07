@@ -17,5 +17,7 @@ const header = () =>{
     headerDiv.appendChild(menuBtn);
     headerDiv.appendChild(contactBtn);
     content.appendChild(headerDiv);
+
+    return (mainBtn, menuBtn, contactBtn)
 };
 export default header;
